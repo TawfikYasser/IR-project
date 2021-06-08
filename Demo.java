@@ -1,13 +1,13 @@
 import java.io.*;
 import java.util.HashSet;
 import java.util.Scanner;
-
 public class Demo {
 
 	public static void main(String[] args) throws IOException {
 		InvertedIndex index = new InvertedIndex();
-		// Building the index
-		index.buildIndex(new String[] { "C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\100.txt",
+
+		index.buildIndex(new String[] { 
+				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\100.txt",
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\101.txt",
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\102.txt",
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\103.txt",
@@ -17,7 +17,8 @@ public class Demo {
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\107.txt",
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\108.txt",
 				"C:\\Users\\tawfe\\eclipse-workspace\\IR Project\\src\\109.txt", });
-		System.out.println("Welcome to IR");
+
+        System.out.println("Welcome to IR");
 		String phrase = "";
 		do {
 			System.out.println("1) Intersect.");
@@ -71,11 +72,14 @@ public class Demo {
 				System.out.println(index.find_04(phrase.toLowerCase()));
 				break;
 			case 7:
+				/*
 				System.out.println("Type a phrase for compare: ");
 				phrase = in.readLine();
-				index.compare(phrase.toLowerCase());
+				*/
+				index.compare("and can ehab should only");
 				break;
 			}
 		} while (!phrase.isEmpty());
-	}
+    }
+	
 }
