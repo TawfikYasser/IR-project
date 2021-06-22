@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -14,8 +13,7 @@ class DictEntry2 {
     }
 }
 public class InvertedIndex {
-
-		 //--------------------------------------------
+            //--------------------------------------------
 	    Map<Integer, String> sources;  // store the doc_id and the file name
 	    HashMap<String, DictEntry2> index; // THe inverted index
 	    //--------------------------------------------
